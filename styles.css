@@ -1,0 +1,176 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:crimson;
+    box-sizing:border-box
+}
+
+body {
+    color: white;
+}
+
+
+.slideshow-container-history {
+    max-width: 450px;
+    max-height: 500px;
+    position:relative;
+    margin: auto;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+.slides {
+    display: none;
+}
+
+
+.captiontexthistory {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    color: white; /* Text color */
+    padding: 8px;
+    position: absolute; /* Positioning for overlay */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.captiontexthistory {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numberofslidehist {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width:15px;
+    margin: 0 2px;
+    background-color:#bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+.imageshistory {
+   width: 430px;
+   height: 480px;
+}
+
+
+
+#intro-history {
+    font-size: 24px;
+    margin-bottom: 120px;
+    margin-top: 100px;
+    background-color:brown;
+    padding: 16px;
+}
+
+
+.hiddentext {
+    display:none;
+    color: white;
+    padding:  10px;
+
+}
+
+.hiddentext.visible {
+    display: block;
+    border-width: 5px;
+    font-size: 20px;
+    background-color:firebrick;
+}
+
+.historyheadings {
+    text-align: center;
+    color: white;
+    padding:10px 10px;
+    background-color: firebrick;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: background-color 2s;
+    border-color: white;
+}
+
+.historyheadings:hover{
+    font-size: 25px;
+    background-color:darkred;
+    color:white;
+}
+
+#info-history  {
+    display: block;
+    margin: 0 auto;
+	width: 90%;
+}
+
+div .section {
+    border-width: 5px;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 15px;
+    background-color:orangered;
+    
+}
+
+.section:hover .historyheadings  {
+    background-color:darkred;
+}
+
